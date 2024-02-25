@@ -1,7 +1,7 @@
 #! /bin/sh
-git config --global user.name "Sanmollers"
-git config --global user.email mollersjean0@gmail.com
-echo "Connected as Sanmollers ! \n"
+git config user.name "Sanmollers"
+git config user.email mollersjean0@gmail.com
+echo "Connection as Sanmollers... \n"
 echo "Entrez le message du commit entre \"\" puis la touche Entrer ou la touche Entrer pour l'envoyer en urgence."
 if [ $# -eq 0 ]
 then
