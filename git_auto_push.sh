@@ -2,12 +2,12 @@
 git config user.name "Sanmollers"
 git config user.email mollersjean0@gmail.com
 echo "Connection as Sanmollers... \n"
-echo "Entrez le message du commit entre \"\" puis la touche Entrer ou la touche Entrer pour l'envoyer en urgence."
+read -p "Entrez le message du commit entre \"\" puis la touche Entrer ou la touche Entrer pour l'envoyer en urgence." commit_message
 if [ $# -eq 0 ]
 then
  git add . | git commit -m "push en urgence à relire !" | git push
  echo "push en urgence à relire !"
 else
- git add . | git commit -m "$1" | git push
+ git add . | git commit -m "$commit_message" | git push
  echo "Votre projet a bien ete \"push\" !"
 fi
