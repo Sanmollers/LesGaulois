@@ -1,10 +1,6 @@
 # - * - ENCODAGE: UTF-8 - * -
 #! /bin/sh
 
-git config user.name "Sanmollers"
-git config user.email mollersjean0@gmail.com
-echo -e "Connection as Sanmollers... \n"
-
 read -p "Entrez le message du commit entre \"\" puis la touche Entrer ou la touche Entrer pour l'envoyer en urgence. " commit_message
 echo -e "\n"
 
