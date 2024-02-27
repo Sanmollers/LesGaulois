@@ -33,6 +33,9 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
+		Gaulois gaul1;
+		gaul1 = new Gaulois("Azeezix", 2);
+		System.out.println(gaul1.getNom());
 	}
 
 }
