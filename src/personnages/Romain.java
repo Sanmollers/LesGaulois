@@ -1,5 +1,7 @@
 package personnages;
 
+import java.security.PublicKey;
+
 public class Romain {
 	private String nom;
 	private int force;
@@ -14,7 +16,7 @@ public class Romain {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "« " + texte + " »");
 	}
 
 	private String prendreParole() {
@@ -28,5 +30,12 @@ public class Romain {
 		} else {
 			parler("J'abandonne...");
 		}
+	}
+
+	public static void main(String[] args) {
+		Romain romus = new Romain("Romus", 6);
+		System.out.println(romus.prendreParole());
+		romus.parler("C'est Romus qui parle !");
+		romus.recevoirCoup(2);
 	}
 }

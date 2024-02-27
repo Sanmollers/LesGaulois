@@ -33,9 +33,12 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
-		Gaulois gaul1;
-		gaul1 = new Gaulois("Azeezix", 2);
-		System.out.println(gaul1.getNom());
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		System.out.println(asterix);
+		System.out.println(asterix.prendreParole());
+		asterix.parler("C'est Astérix qui parle !");
+		Romain romus = new Romain("Romus",6);
+		asterix.frapper(romus);
 	}
 
 }
