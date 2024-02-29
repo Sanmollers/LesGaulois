@@ -14,11 +14,12 @@ public class Village {
 		this.nom = nom;
 		this.chef = chef;
 		villageois = new Gaulois[nbVillageoisMaximum];
-		
+
 	}
+
 	public void ajouterHabitant(Gaulois gaulois, Gaulois[] villageois) {
 		if (villageois.length <= nbVillageoisMaximum) {
-			System.out.println("Le village comporte "+villageois.length+" habitant(s)./n"+villageois);
+			System.out.println("Le village comporte " + villageois.length + " habitant(s)./n" + villageois);
 		} else {
 			System.out.println("Le Village est plein !");
 		}
@@ -28,7 +29,7 @@ public class Village {
 	public String getNom() {
 		return nom;
 	}
-	
+
 	public void setChef(Chef chef) {
 		this.chef = chef;
 	}
