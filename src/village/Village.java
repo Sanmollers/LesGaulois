@@ -10,15 +10,18 @@ public class Village {
 	private int nbVillageois = 0;
 	private int nbVillageoisMaximum;
 
-	public Village(String nom, Chef chef) {
+	public Village(String nom, Chef chef, int nbVillageoisMaximum) {
 		this.nom = nom;
 		this.chef = chef;
-		this.villageois.length() = nbVillageois ;
 		villageois = new Gaulois[nbVillageoisMaximum];
 		
 	}
 	public void ajouterHabitant(Gaulois gaulois, Gaulois[] villageois) {
-		// TODO Auto-generated method stub
+		if (villageois.length <= nbVillageoisMaximum) {
+			System.out.println("Le village comporte "+villageois.length+" habitant(s)./n"+villageois);
+		} else {
+			System.out.println("Le Village est plein !");
+		}
 
 	}
 
