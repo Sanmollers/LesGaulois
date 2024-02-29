@@ -1,7 +1,5 @@
 package personnages;
 
-import java.security.PublicKey;
-
 public class Romain {
 	private String nom;
 	private int force;

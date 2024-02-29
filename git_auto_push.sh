@@ -10,5 +10,5 @@ then
  echo "Push en urgence à relire !"
 else
  git add . | git commit -m "$commit_message" | git push
- echo "Votre projet a bien été \"push\" avec le commit suivant : \"$commit_message\" !"
+ echo "Votre projet a bien été \"push\" avec le commit suivant : \""$commit_message"\" !"
 fi
