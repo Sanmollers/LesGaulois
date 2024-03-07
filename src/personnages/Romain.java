@@ -39,7 +39,5 @@ public class Romain {
 		System.out.println(romus.prendreParole());
 		romus.parler("C'est Romus qui parle !");
 		romus.recevoirCoup(2);
-		romus.recevoirCoup(2);
-		romus.recevoirCoup(2);
 	}
 }
