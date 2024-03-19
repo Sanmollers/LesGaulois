@@ -1,11 +1,11 @@
 package personnages;
 
-public enum Equipements {
+public enum Equipement {
 	CASQUE("casque"), BOUCLIER("bouclier");
 
 	private String nom;
 
-	private Equipements(String nom) {
+	private Equipement(String nom) {
 		this.nom = nom;
 	}
 	
