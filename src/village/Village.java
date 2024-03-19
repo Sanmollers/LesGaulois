@@ -1,7 +1,5 @@
 package village;
 
-import java.util.Iterator;
-
 import personnages.Chef;
 import personnages.Gaulois;
 
